@@ -1,0 +1,22 @@
+{
+    "name": "uaedarling/gcc-currency-switcher",
+    "description": "Custom GCC & Jordan Multi-Currency for WooCommerce",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7",
+        "wp-coding-standards/wpcs": "^3.0",
+        "phpcompatibility/phpcompatibility-wp": "^2.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "lint": "phpcs --standard=phpcs.xml.dist ."
+    }
+}

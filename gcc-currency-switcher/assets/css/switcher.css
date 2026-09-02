@@ -1,0 +1,39 @@
+/**
+ * Minimal styling for the GCC & Jordan currency switcher dropdown.
+ * Designed to sit in a slim top bar. No external CSS framework dependency.
+ *
+ * @package Gcc_Currency_Switcher
+ */
+
+.gcc-cs-switcher {
+	display: inline-flex;
+	align-items: center;
+	font-size: 12px;
+	line-height: 1.4;
+	padding: 2px 6px;
+}
+
+.gcc-cs-switcher .gcc-cs-currency-select {
+	font-size: 12px;
+	line-height: 1.4;
+	padding: 2px 4px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	background: #fff;
+	color: #333;
+	max-width: 90px;
+}
+
+.gcc-cs-switcher .gcc-cs-currency-select:focus {
+	outline: 1px dotted #666;
+}
+
+/* RTL support for Arabic-facing markets. */
+html[dir="rtl"] .gcc-cs-switcher {
+	direction: rtl;
+	text-align: right;
+}
+
+html[dir="rtl"] .gcc-cs-switcher .gcc-cs-currency-select {
+	text-align: right;
+}
